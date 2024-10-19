@@ -8,12 +8,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # Logging configuration
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-BASE_URL = "http://cdn.ghosteshop.com/Nintendo%20DS/"
-BASE_IMAGE_URL = "https://cdn.ghosteshop.com/Images/ds/"
-BASE_FORWARDER_URL = "http://cdn.ghosteshop.com/Nintendo%20DS%20-%20forwarders/"
-BASE_IMAGE_DIR = "/var/www/ghosteshop/cdn/Images/ds/"
-BASE_FORWARDER_DIR = "/var/www/ghosteshop/cdn/Nintendo DS - forwarders/"
-BASE_DIR = "/var/www/ghosteshop/cdn/Nintendo DS/"
+BASE_URL = "http://cdn.domain.com/Nintendo%20DS/"
+BASE_IMAGE_URL = "https://cdn.domain.com/Images/ds/"
+BASE_FORWARDER_URL = "http://cdn.domain.com/Nintendo%20DS%20-%20forwarders/"
+BASE_IMAGE_DIR = "/var/www/domain/cdn/Images/ds/"
+BASE_FORWARDER_DIR = "/var/www/domain/cdn/Nintendo DS - forwarders/"
+BASE_DIR = "/var/www/domain/cdn/Nintendo DS/"
 
 def get_file_size(file_path):
     size_bytes = os.path.getsize(file_path)
